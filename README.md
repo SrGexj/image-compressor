@@ -38,9 +38,8 @@ Si deseas ejecutar el proyecto en tu entorno local:
     ```
   o también puedes hacer 
 
-    ```bash
     nodemon server.js  
-    ```
+    
 El servicio se ejecutará en http://localhost:3000.
 
 5. **Uso:**
