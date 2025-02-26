@@ -21,58 +21,69 @@ Image Compressor API es un servicio online gratuito que permite comprimir imáge
 Si deseas ejecutar el proyecto en tu entorno local:
 
 1. **Clonar el repositorio:**
-   ```bash
-   git clone https://github.com/SrGexj/image-compressor.git
+```bash
+git clone https://github.com/SrGexj/image-compressor.git
+```
 
-2. **Entrar en el directorio del  proyecto:**
-   ```bash
-    cd image-compressor-api
+2. **Entrar en el directorio del proyecto:**
+```bash
+cd image-compressor-api
+```
 
-3. **Instalar las dependecias:**
-   ```bash
-    npm install 
+3. **Instalar las dependencias:**
+```bash
+npm install
+```
 
 4. **Inicializar el servidor:**
-    ```bash
-    node server.js  
-    ```
-    o también puedes hacer 
+```bash
+node server.js
+```
 
-      ```bash
-      nodemon server.js  
+o también puedes usar nodemon para desarrollo:
+```bash
+nodemon server.js
+```
 
 El servicio se ejecutará en http://localhost:3000.
 
-5. **Uso:**
+## Uso
 
- - Subir las imágenes.
- - Configurar el ancho (resize), el formato de salida, la calidad y si se desea compresión lossless.
- - Visualizar las imágenes comprimidas y descargarlas mediante los botones correspondientes.
- - API Endpoint
- - POST /upload
- - Parámetros (form-data):
-  -- images (File): Una o varias imágenes.
-  -- resize (opcional, number): Ancho de redimensionamiento (default: 1500).
-  -- format (opcional, string): Formato de salida (webp, jpeg, png; default: webp).
-  -- quality (opcional, number): Calidad de la compresión (0-100, default: 80).
-  -- lossless (opcional, boolean/string): true para compresión sin pérdida, false (default).
+- Subir las imágenes.
+- Configurar el ancho (resize), el formato de salida, la calidad y si se desea compresión lossless.
+- Visualizar las imágenes comprimidas y descargarlas mediante los botones correspondientes.
 
-## Ejemplo de respuesta:
+## API Endpoint
 
-  ```json 
-  {
-    "message": "Images compressed",
-    "files": [
-      "./uploads/compressed-image1.webp",
-      "./uploads/compressed-image2.webp"
-    ]
-  }
+**POST /upload**
+
+**Parámetros (form-data):**
+
+- `images` (File): Una o varias imágenes (requerido)
+- `resize` (opcional, number): Ancho de redimensionamiento (default: 1500)
+- `format` (opcional, string): Formato de salida (webp, jpeg, png; default: webp)
+- `quality` (opcional, number): Calidad de la compresión (0-100, default: 80)
+- `lossless` (opcional, boolean/string): true para compresión sin pérdida (default: false)
+
+**Ejemplo de respuesta:**
+```json
+{
+  "message": "Images compressed",
+  "files": [
+    "./uploads/compressed-image1.webp",
+    "./uploads/compressed-image2.webp"
+  ]
+}
 ```
+
 ## Contribuciones
+
 ¡Las contribuciones son bienvenidas! Si deseas mejorar el proyecto, abre un issue o envía un pull request.
 
 ## Licencia
+
 Este proyecto está licenciado bajo la MIT License.
 
 ## Contacto
+
 Para dudas o sugerencias, puedes escribir a info@gexj.es
