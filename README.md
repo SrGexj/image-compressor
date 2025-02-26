@@ -37,7 +37,7 @@ Si deseas ejecutar el proyecto en tu entorno local:
     node server.js  
     ```
     o también puedes hacer 
-    
+
       ```bash
       nodemon server.js  
 
@@ -51,12 +51,11 @@ El servicio se ejecutará en http://localhost:3000.
  - API Endpoint
  - POST /upload
  - Parámetros (form-data):
-
-images (File): Una o varias imágenes.
-resize (opcional, number): Ancho de redimensionamiento (default: 1500).
-format (opcional, string): Formato de salida (webp, jpeg, png; default: webp).
-quality (opcional, number): Calidad de la compresión (0-100, default: 80).
-lossless (opcional, boolean/string): true para compresión sin pérdida, false (default).
+  -- images (File): Una o varias imágenes.
+  -- resize (opcional, number): Ancho de redimensionamiento (default: 1500).
+  -- format (opcional, string): Formato de salida (webp, jpeg, png; default: webp).
+  -- quality (opcional, number): Calidad de la compresión (0-100, default: 80).
+  -- lossless (opcional, boolean/string): true para compresión sin pérdida, false (default).
 
 ## Ejemplo de respuesta:
 
