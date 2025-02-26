@@ -34,8 +34,12 @@ Si deseas ejecutar el proyecto en tu entorno local:
 
 4. **Inicializar el servidor:**
     ```bash
-    npm start
-
+    node server.js  
+  ```
+  o
+  ```bash
+    nodemon server.js
+    
 El servicio se ejecutará en http://localhost:3000.
 
 5. **Uso:**
