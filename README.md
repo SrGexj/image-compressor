@@ -1,3 +1,5 @@
+![alt text](repository-open-graph-template.png)
+
 # Image Compressor API
 
 Image Compressor API es un servicio online gratuito que permite comprimir imágenes de forma sencilla. Utiliza Node.js, Express, Multer y Sharp para procesar imágenes subidas por el usuario, ofreciendo opciones configurables como redimensionamiento, selección de formato (por defecto **webp**), ajuste de calidad y compresión sin pérdida.
