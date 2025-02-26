@@ -37,6 +37,7 @@ Si deseas ejecutar el proyecto en tu entorno local:
     node server.js  
     ```
     o también puedes hacer 
+    
       ```bash
       nodemon server.js  
 
