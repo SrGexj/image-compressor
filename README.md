@@ -9,11 +9,6 @@ Image Compressor API es un servicio online gratuito que permite comprimir imáge
 - **Formatos de Salida**: Permite elegir entre **webp**, **jpeg** y **png**.
 - **Control de Calidad**: Configurable mediante un control de rango (0-100, valor predeterminado 80).
 - **Compresión sin Pérdida**: Opción para activar compresión lossless.
-- **Interfaz Interactiva**: Previsualización de las imágenes comprimidas con botón de descarga.
-
-## Demo
-
-Prueba la API en vivo: [https://compressor.bittacora.dev/](https://compressor.bittacora.dev/)
 
 ## Cómo Funciona
 
@@ -27,55 +22,53 @@ Si deseas ejecutar el proyecto en tu entorno local:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/tu_usuario/image-compressor-api.git
-Entrar en el directorio del proyecto:
-bash
-Copiar
-Editar
-cd image-compressor-api
-Instalar las dependencias:
-bash
-Copiar
-Editar
-npm install
-Iniciar el servidor:
-bash
-Copiar
-Editar
-npm start
-El servicio se ejecutará en http://localhost:3000.
-Uso
-Accede a la URL donde esté desplegado el proyecto (por ejemplo, https://compressor.bittacora.dev/) y utiliza el formulario para:
+   git clone https://github.com/SrGexj/image-compressor.git
 
-Subir las imágenes.
-Configurar el ancho (resize), el formato de salida, la calidad y si se desea compresión lossless.
-Visualizar las imágenes comprimidas y descargarlas mediante los botones correspondientes.
-API Endpoint
-POST /upload
-Parámetros (form-data):
+2. **Entrar en el directorio del  proyecto:**
+   ```bash
+    cd image-compressor-api
+
+3. **Instalar las dependecias:**
+   ```bash
+    npm install 
+
+4. **Inicializar el servidor:**
+    ```bash
+    npm start
+
+El servicio se ejecutará en http://localhost:3000.
+
+5. **Uso:**
+
+ - Subir las imágenes.
+ - Configurar el ancho (resize), el formato de salida, la calidad y si se desea compresión lossless.
+ - Visualizar las imágenes comprimidas y descargarlas mediante los botones correspondientes.
+ - API Endpoint
+ - POST /upload
+ - Parámetros (form-data):
 
 images (File): Una o varias imágenes.
 resize (opcional, number): Ancho de redimensionamiento (default: 1500).
 format (opcional, string): Formato de salida (webp, jpeg, png; default: webp).
 quality (opcional, number): Calidad de la compresión (0-100, default: 80).
 lossless (opcional, boolean/string): true para compresión sin pérdida, false (default).
-Ejemplo de respuesta:
 
-json
-Copiar
-Editar
-{
-  "message": "Images compressed",
-  "files": [
-    "./uploads/compressed-image1.webp",
-    "./uploads/compressed-image2.webp"
-  ]
-}
-Contribuciones
+## Ejemplo de respuesta:
+
+  ```json 
+  {
+    "message": "Images compressed",
+    "files": [
+      "./uploads/compressed-image1.webp",
+      "./uploads/compressed-image2.webp"
+    ]
+  }
+```
+## Contribuciones
 ¡Las contribuciones son bienvenidas! Si deseas mejorar el proyecto, abre un issue o envía un pull request.
 
-Licencia
+## Licencia
 Este proyecto está licenciado bajo la MIT License.
 
-Contacto
-Para dudas o sugerencias, puedes escribir a tu_email@example.com.
+## Contacto
+Para dudas o sugerencias, puedes escribir a info@gexj.es
